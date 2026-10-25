@@ -1,111 +1,213 @@
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
-
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
-
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  @media (max-width: 1024px) {
-    font-size: 16px;
-  }
+  --fondo: #0b3d3a;
+  --superficie: #11524e;
+  --borde: #1f7a73;
+  --acento: #2dd4bf;
+  --acento-hover: #5eead4;
+  --acento-suave: #99f6e4;
+  --texto-boton: #04201e;
+  --titulo: #ff8a1f;
+  --texto: #ffffff;
+  --fuente-titulos: "Bricolage Grotesque", system-ui, sans-serif;
+  --fuente-texto: "Outfit", system-ui, sans-serif;
+  --fuente-mono: "JetBrains Mono", ui-monospace, monospace;
+  --ancho-sidebar: 270px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
-
-  #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
+:root[data-theme="dark"] {
+  --fondo: #03100f;
+  --superficie: #0a1f1e;
+  --borde: #174240;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
 body {
   margin: 0;
 }
 
-#root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
+body {
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: var(--fuente-texto);
+  font-size: 1.0625rem;
+  line-height: 1.6;
 }
 
 h1,
-h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
+h2,
+h3 {
+  font-family: var(--fuente-titulos);
+  color: var(--titulo);
+  line-height: 1.15;
+  margin: 0 0 0.5em;
 }
-
 h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
-  }
+  font-size: clamp(2rem, 4vw, 3rem);
 }
 h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+}
+a {
+  color: var(--acento-suave);
+}
+
+/* Layout */
+.layout {
+  min-height: 100vh;
+}
+.contenido {
+  margin-left: var(--ancho-sidebar);
+  padding: 2.5rem clamp(1rem, 4vw, 3rem);
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: var(--ancho-sidebar);
+  background: var(--superficie);
+  border-right: 1px solid var(--borde);
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  overflow-y: auto;
+  z-index: 30;
+}
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.marca-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--acento);
+  color: var(--texto-boton);
+  display: grid;
+  place-items: center;
+  font-family: var(--fuente-titulos);
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+.marca-nombre {
+  margin: 0;
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+.marca-sub {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--acento-suave);
+}
+
+.nav-lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.nav-link {
+  display: block;
+  padding: 0.65rem 0.9rem;
+  border-radius: 10px;
+  color: var(--texto);
+  text-decoration: none;
+}
+.nav-link:hover {
+  background: rgba(45, 212, 191, 0.15);
+}
+.nav-link.activo {
+  background: var(--acento);
+  color: var(--texto-boton);
+  font-weight: 600;
+}
+
+/* Botones */
+.boton {
+  display: inline-block;
+  padding: 0.7rem 1.2rem;
+  border-radius: 10px;
+  border: 0;
+  background: var(--acento);
+  color: var(--texto-boton);
+  font-family: var(--fuente-texto);
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+.boton:hover {
+  background: var(--acento-hover);
+}
+
+.nav-link:focus-visible,
+.menu-btn:focus-visible,
+.boton:focus-visible {
+  outline: 3px solid var(--acento-suave);
+  outline-offset: 2px;
+}
+
+/* Panel móvil */
+.menu-btn {
+  display: none;
+}
+.overlay {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .menu-btn {
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0.75rem;
+    left: 0.75rem;
+    z-index: 40;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    border: 1px solid var(--borde);
+    background: var(--acento);
+    color: var(--texto-boton);
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+  .sidebar {
+    transform: translateX(-100%);
+    visibility: hidden;
+    transition:
+      transform 0.25s ease,
+      visibility 0.25s;
+  }
+  .sidebar.abierta {
+    transform: translateX(0);
+    visibility: visible;
+  }
+  .overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 20;
+  }
+  .contenido {
+    margin-left: 0;
+    padding-top: 4.5rem;
   }
 }
-p {
-  margin: 0;
-}
 
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
-}
-
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
+@media (prefers-reduced-motion: reduce) {
+  .sidebar {
+    transition: none;
+  }
 }
