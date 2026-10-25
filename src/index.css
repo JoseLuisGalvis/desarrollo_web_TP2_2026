@@ -211,3 +211,184 @@ a {
     transition: none;
   }
 }
+
+/* Portada y tarjetas */
+.etiqueta {
+  font-family: var(--fuente-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--acento-suave);
+  margin: 0 0 0.75rem;
+}
+.portada {
+  padding: 1rem 0 2.5rem;
+  max-width: 760px;
+}
+.portada-texto {
+  font-size: 1.2rem;
+  max-width: 60ch;
+}
+.acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+.boton-sec {
+  background: transparent;
+  color: var(--acento-suave);
+  border: 2px solid var(--acento);
+}
+.boton-sec:hover {
+  background: rgba(45, 212, 191, 0.15);
+}
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+.tarjeta {
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 16px;
+  padding: 1.25rem;
+}
+.integrante {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.integrante-foto {
+  width: 140px;
+  height: 140px;
+  border-radius: 16px;
+  object-fit: cover;
+  border: 2px solid var(--acento);
+}
+.integrante h3 {
+  margin-bottom: 0.1em;
+}
+.integrante-rol {
+  margin: 0;
+  color: var(--acento-suave);
+}
+
+/* Perfil */
+.perfil-cabecera {
+  display: grid;
+  grid-template-columns: minmax(240px, 280px) 1fr;
+  gap: 2rem;
+  align-items: start;
+  margin-bottom: 2.5rem;
+}
+.perfil-meta {
+  color: var(--acento-suave);
+  margin-top: 0;
+}
+.habilidades {
+  display: grid;
+  gap: 1rem;
+  max-width: 620px;
+}
+.habilidad-nombre {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+.barra {
+  height: 12px;
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.barra-relleno {
+  height: 100%;
+  background: var(--acento);
+  border-radius: 999px;
+  animation: llenar 1s ease-out;
+}
+@keyframes llenar {
+  from {
+    width: 0;
+  }
+}
+
+/* Tarjeta que gira */
+.flip {
+  background: none;
+  border: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 280px;
+  height: 340px;
+  perspective: 1000px;
+  cursor: pointer;
+  color: inherit;
+  font: inherit;
+  text-align: center;
+}
+.flip-interior {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+.flip.girada .flip-interior {
+  transform: rotateY(180deg);
+}
+.flip-cara {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 1.25rem;
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 16px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.flip-frente img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 2px solid var(--acento);
+}
+.flip-dorso {
+  transform: rotateY(180deg);
+}
+.flip-pista {
+  font-size: 0.85rem;
+  color: var(--acento-suave);
+}
+.flip-dato {
+  font-size: 1.1rem;
+}
+.flip:focus-visible {
+  outline: 3px solid var(--acento-suave);
+  outline-offset: 4px;
+  border-radius: 16px;
+}
+
+@media (max-width: 700px) {
+  .perfil-cabecera {
+    grid-template-columns: 1fr;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .flip-interior {
+    transition: none;
+  }
+  .barra-relleno {
+    animation: none;
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "nombre": "José Luis Galvis",
+  "rol": "Front end y testing",
+  "ubicacion": "CABA, Argentina",
+  "foto": "/img/jose-luis.jpg",
+  "github": "https://github.com/JoseLuisGalvis",
+  "portafolio": "https://dev-portfolio-2025.vercel.app/",
+  "bio": "Estudiante de Desarrollo de Sistemas Web en el IFTS N°29. Le gusta entender bien cómo funcionan las cosas antes de darlas por terminadas, así que en este equipo se ocupó de la estructura general del sitio y de que las interacciones en JavaScript anduvieran prolijas.",
+  "habilidades": [
+    { "nombre": "HTML y CSS", "nivel": 85 },
+    { "nombre": "JavaScript", "nivel": 75 },
+    { "nombre": "Testing", "nivel": 70 },
+    { "nombre": "Redes", "nivel": 60 }
+  ],
+  "datosCuriosos": [
+    "Aprendió a programar mirando tutoriales a la 1 de la mañana.",
+    "Tiene más pestañas del navegador abiertas que amigos en el celular.",
+    "Una vez debuggeó un error que era solo un punto y coma faltante… durante 40 minutos.",
+    "Prefiere el modo oscuro incluso para leer el sol."
+  ]
+}
