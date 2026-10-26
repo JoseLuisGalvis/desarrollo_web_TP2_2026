@@ -1,0 +1,22 @@
+[
+  { "id": 1, "nombre": "[DEMO] Landing page de estudio", "tecnologia": "React", "enlace": "https://github.com/JoseLuisGalvis" },
+  { "id": 2, "nombre": "[DEMO] Portfolio personal", "tecnologia": "React", "enlace": "https://github.com/JoseLuisGalvis" },
+  { "id": 3, "nombre": "[DEMO] Panel de tareas", "tecnologia": "React", "enlace": "https://github.com/JoseLuisGalvis" },
+  { "id": 4, "nombre": "[DEMO] Buscador de recetas", "tecnologia": "React", "enlace": "https://github.com/JoseLuisGalvis" },
+  { "id": 5, "nombre": "[DEMO] Galería responsive", "tecnologia": "React", "enlace": "https://github.com/JoseLuisGalvis" },
+  { "id": 6, "nombre": "[DEMO] Calculadora", "tecnologia": "JavaScript", "enlace": "https://github.com/JoseLuisGalvis" },
+  { "id": 7, "nombre": "[DEMO] Juego de memoria", "tecnologia": "JavaScript", "enlace": "https://github.com/JoseLuisGalvis" },
+  { "id": 8, "nombre": "[DEMO] Lista de compras", "tecnologia": "JavaScript", "enlace": "https://github.com/JoseLuisGalvis" },
+  { "id": 9, "nombre": "[DEMO] Conversor de unidades", "tecnologia": "JavaScript", "enlace": "https://github.com/JoseLuisGalvis" },
+  { "id": 10, "nombre": "[DEMO] Página de presentación", "tecnologia": "HTML y CSS", "enlace": "https://github.com/JoseLuisGalvis" },
+  { "id": 11, "nombre": "[DEMO] Menú de restaurante", "tecnologia": "HTML y CSS", "enlace": "https://github.com/JoseLuisGalvis" },
+  { "id": 12, "nombre": "[DEMO] Invitación digital", "tecnologia": "HTML y CSS", "enlace": "https://github.com/JoseLuisGalvis" },
+  { "id": 13, "nombre": "[DEMO] Pruebas unitarias de calculadora", "tecnologia": "C#", "enlace": "https://github.com/JoseLuisGalvis" },
+  { "id": 14, "nombre": "[DEMO] Validador de formularios", "tecnologia": "C#", "enlace": "https://github.com/JoseLuisGalvis" },
+  { "id": 15, "nombre": "[DEMO] Gestor de inventario", "tecnologia": "C#", "enlace": "https://github.com/JoseLuisGalvis" },
+  { "id": 16, "nombre": "[DEMO] API de turnos", "tecnologia": "Node.js", "enlace": "https://github.com/JoseLuisGalvis" },
+  { "id": 17, "nombre": "[DEMO] Servidor de noticias", "tecnologia": "Node.js", "enlace": "https://github.com/JoseLuisGalvis" },
+  { "id": 18, "nombre": "[DEMO] Middleware de autenticación", "tecnologia": "Node.js", "enlace": "https://github.com/JoseLuisGalvis" },
+  { "id": 19, "nombre": "[DEMO] Servidor web en EC2", "tecnologia": "AWS", "enlace": "https://github.com/JoseLuisGalvis" },
+  { "id": 20, "nombre": "[DEMO] Red VPC con subredes", "tecnologia": "AWS", "enlace": "https://github.com/JoseLuisGalvis" }
+]

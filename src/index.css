@@ -392,3 +392,46 @@ a {
     animation: none;
   }
 }
+
+/* Proyectos: búsqueda y filtro */
+.filtros {
+  display: grid;
+  grid-template-columns: minmax(220px, 2fr) minmax(180px, 1fr) auto;
+  gap: 1rem;
+  align-items: end;
+  margin: 1.5rem 0 1rem;
+}
+.campo label { display: block; margin-bottom: 0.35rem; font-weight: 500; }
+.campo input, .campo select {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid var(--borde);
+  background: var(--superficie);
+  color: var(--texto);
+  font: inherit;
+}
+.campo input::placeholder { color: var(--acento-suave); opacity: 0.7; }
+.campo input:focus-visible, .campo select:focus-visible {
+  outline: 3px solid var(--acento-suave);
+  outline-offset: 2px;
+}
+.conteo { color: var(--acento-suave); margin: 0 0 1rem; }
+.proyecto-num { font-family: var(--fuente-mono); color: var(--acento-suave); font-size: 0.85rem; margin: 0; }
+.proyecto h3 { font-size: 1.15rem; margin-top: 0.25rem; }
+.etiqueta-tec {
+  display: inline-block;
+  font-family: var(--fuente-mono);
+  font-size: 0.8rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(45, 212, 191, 0.18);
+  color: var(--acento-suave);
+  border: 1px solid var(--acento);
+  margin: 0.25rem 0 1rem;
+}
+.vacio { padding: 2rem; text-align: center; border: 1px dashed var(--borde); border-radius: 16px; }
+
+@media (max-width: 700px) {
+  .filtros { grid-template-columns: 1fr; }
+}
