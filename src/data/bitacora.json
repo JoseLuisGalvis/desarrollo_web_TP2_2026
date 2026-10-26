@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "fecha": "25/10/2026",
+    "tipo": "Hecho",
+    "titulo": "Análisis de la consigna y de los repos de referencia",
+    "texto": "Analicé la consigna del TP2, los dos repos demo (react-inicial-landy y react-landy-router) y el repo del TP1. Armé un plan por etapas: estructura base, JSON con búsqueda, API pública y árbol de renderizado."
+  },
+  {
+    "id": 2,
+    "fecha": "25/10/2026",
+    "tipo": "Decisión",
+    "titulo": "Repositorio nuevo e independiente",
+    "texto": "Creé desarrollo_web_TP2_2026 como repositorio público separado del TP1 y generé el proyecto con Vite, React (JavaScript) y React Router."
+  },
+  {
+    "id": 3,
+    "fecha": "25/10/2026",
+    "tipo": "Dificultad",
+    "titulo": "Falló el primer deploy en Vercel",
+    "texto": "Vercel marcó 'Invalid JSON content inside file vercel.json'. El archivo había quedado vacío. Lo regeneré desde la terminal con Node, hice push y el deploy pasó a Ready."
+  },
+  {
+    "id": 4,
+    "fecha": "25/10/2026",
+    "tipo": "Decisión",
+    "titulo": "Nueva identidad visual: teal y naranja",
+    "texto": "Reemplacé el azul marino del TP1 por un verde aguamarina profundo, con tonos más claros para botones, títulos en naranja y texto blanco. Elegí Bricolage Grotesque para títulos, Outfit para el texto y JetBrains Mono para las etiquetas."
+  },
+  {
+    "id": 5,
+    "fecha": "25/10/2026",
+    "tipo": "Hecho",
+    "titulo": "Layout, sidebar y rutas",
+    "texto": "Armé un layout con una sidebar compartida que marca la sección activa, un panel desplegable para móvil y seis rutas con React Router. La ruta de la API se llama /api-publica para evitar conflictos con el manejo de /api en Vercel."
+  },
+  {
+    "id": 6,
+    "fecha": "25/10/2026",
+    "tipo": "Dificultad",
+    "titulo": "Pantalla en blanco por un componente vacío",
+    "texto": "Vite mostró que Sidebar.jsx no exportaba nada por defecto. El archivo se había creado pero no se había guardado con su contenido. Lo corregí pegando el código completo y guardando."
+  },
+  {
+    "id": 7,
+    "fecha": "25/10/2026",
+    "tipo": "Hecho",
+    "titulo": "Portada, tarjeta de integrante y perfil",
+    "texto": "Armé la portada del equipo, una tarjeta de integrante reutilizable por props y un perfil con tarjeta que gira para mostrar datos curiosos, barras de habilidades animadas y los datos en un archivo JSON."
+  },
+  {
+    "id": 8,
+    "fecha": "26/10/2026",
+    "tipo": "Hecho",
+    "titulo": "JSON de proyectos con búsqueda y filtro",
+    "texto": "Sumé 20 registros de ejemplo (marcados con [DEMO] hasta reemplazarlos), un listado dinámico, búsqueda por texto que ignora tildes, filtro por tecnología, mensaje de sin resultados y botón para restablecer."
+  }
+]
