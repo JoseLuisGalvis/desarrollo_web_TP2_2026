@@ -568,3 +568,60 @@ a {
 .repo-meta .etiqueta-tec {
   margin: 0;
 }
+
+/* Árbol de renderizado */
+.arbol-lista {
+  list-style: none;
+  margin: 0;
+  padding-left: 1.25rem;
+  border-left: 1px dashed var(--borde);
+}
+.arbol-raiz {
+  padding-left: 0;
+  border-left: 0;
+  margin-top: 1.5rem;
+}
+.nodo {
+  margin: 0.4rem 0;
+}
+.nodo summary,
+.nodo-hoja {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.3rem 0.8rem;
+}
+.nodo summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 0.25rem 0;
+}
+.nodo summary::-webkit-details-marker {
+  display: none;
+}
+.nodo summary::before {
+  content: "▸";
+  color: var(--acento);
+  transition: transform 0.2s;
+}
+.nodo details[open] > summary::before {
+  transform: rotate(90deg);
+}
+.nodo summary:focus-visible {
+  outline: 3px solid var(--acento-suave);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+.nodo-hoja {
+  padding: 0.25rem 0 0.25rem 1.2rem;
+}
+.nodo-nombre {
+  font-family: var(--fuente-mono);
+  font-weight: 600;
+  color: var(--acento);
+}
+.nodo-desc {
+  flex-basis: 100%;
+  padding-left: 1.2rem;
+  font-size: 0.95rem;
+}

@@ -1,0 +1,122 @@
+{
+  "nombre": "main.jsx",
+  "tipo": "Entrada",
+  "descripcion": "Monta React en #root dentro de StrictMode y BrowserRouter.",
+  "hijos": [
+    {
+      "nombre": "App",
+      "tipo": "Principal",
+      "descripcion": "src/App.jsx · Componente principal: define el Layout y las rutas.",
+      "hijos": [
+        {
+          "nombre": "Layout",
+          "tipo": "Layout",
+          "descripcion": "components/Layout.jsx · Estructura compartida: botón ☰, sidebar, fondo oscuro del panel móvil y <main>. Guarda si el panel está abierto.",
+          "hijos": [
+            {
+              "nombre": "Sidebar",
+              "tipo": "Componente",
+              "descripcion": "components/Sidebar.jsx · Identidad del equipo y menú lateral.",
+              "hijos": [
+                {
+                  "nombre": "NavLink (uno por sección)",
+                  "tipo": "react-router",
+                  "descripcion": "Enlaces del menú; marcan la sección activa."
+                }
+              ]
+            },
+            {
+              "nombre": "Routes",
+              "tipo": "react-router",
+              "descripcion": "Dentro de <main>. Muestra una sola página, según la URL.",
+              "hijos": [
+                {
+                  "nombre": "Inicio",
+                  "tipo": "Página",
+                  "descripcion": "pages/Inicio.jsx · Portada del equipo.",
+                  "hijos": [
+                    {
+                      "nombre": "TarjetaIntegrante",
+                      "tipo": "Componente",
+                      "descripcion": "components/TarjetaIntegrante.jsx · Una por integrante; recibe nombre, rol, foto y enlaces por props."
+                    }
+                  ]
+                },
+                {
+                  "nombre": "Perfil",
+                  "tipo": "Página",
+                  "descripcion": "pages/Perfil.jsx · Perfil de José Luis Galvis, con datos de perfil.json.",
+                  "hijos": [
+                    {
+                      "nombre": "TarjetaFlip",
+                      "tipo": "Componente",
+                      "descripcion": "components/TarjetaFlip.jsx · Tarjeta que gira y muestra un dato curioso al azar."
+                    },
+                    {
+                      "nombre": "BarraHabilidad",
+                      "tipo": "Componente",
+                      "descripcion": "components/BarraHabilidad.jsx · Una por habilidad; recibe nombre y nivel por props."
+                    }
+                  ]
+                },
+                {
+                  "nombre": "Proyectos",
+                  "tipo": "Página",
+                  "descripcion": "pages/Proyectos.jsx · Búsqueda y filtro sobre proyectos.json.",
+                  "hijos": [
+                    {
+                      "nombre": "TarjetaProyecto",
+                      "tipo": "Componente",
+                      "descripcion": "components/TarjetaProyecto.jsx · Una por cada registro del JSON."
+                    }
+                  ]
+                },
+                {
+                  "nombre": "Api",
+                  "tipo": "Página",
+                  "descripcion": "pages/Api.jsx · Consulta la API de GitHub con estados de carga y error.",
+                  "hijos": [
+                    {
+                      "nombre": "TarjetaRepo",
+                      "tipo": "Componente",
+                      "descripcion": "components/TarjetaRepo.jsx · Una por repositorio devuelto por la API."
+                    }
+                  ]
+                },
+                {
+                  "nombre": "Arbol",
+                  "tipo": "Página",
+                  "descripcion": "pages/Arbol.jsx · Esta sección.",
+                  "hijos": [
+                    {
+                      "nombre": "NodoArbol",
+                      "tipo": "Componente",
+                      "descripcion": "components/NodoArbol.jsx · Componente recursivo: se dibuja a sí mismo por cada hijo."
+                    }
+                  ]
+                },
+                {
+                  "nombre": "Bitacora",
+                  "tipo": "Página",
+                  "descripcion": "pages/Bitacora.jsx · Registros del proceso, desde bitacora.json.",
+                  "hijos": [
+                    {
+                      "nombre": "RegistroBitacora",
+                      "tipo": "Componente",
+                      "descripcion": "components/RegistroBitacora.jsx · Un desplegable por registro."
+                    }
+                  ]
+                },
+                {
+                  "nombre": "NoEncontrada",
+                  "tipo": "Página",
+                  "descripcion": "pages/NoEncontrada.jsx · Ruta comodín (*) con enlace para volver al inicio."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
