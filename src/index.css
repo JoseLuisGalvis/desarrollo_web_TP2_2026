@@ -538,3 +538,33 @@ a {
 .registro p {
   margin: 0 0 1rem;
 }
+
+/* API pública */
+.estado {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+  background: var(--superficie);
+}
+.estado-error {
+  border-color: var(--titulo);
+}
+.estado-error p {
+  margin-top: 0;
+}
+.repo-desc {
+  margin: 0.25rem 0 0.75rem;
+}
+.repo-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  font-size: 0.9rem;
+  color: var(--acento-suave);
+  margin-bottom: 1rem;
+}
+.repo-meta .etiqueta-tec {
+  margin: 0;
+}
