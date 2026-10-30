@@ -54,5 +54,26 @@
     "tipo": "Hecho",
     "titulo": "JSON de proyectos con búsqueda y filtro",
     "texto": "Sumé 20 registros de ejemplo (marcados con [DEMO] hasta reemplazarlos), un listado dinámico, búsqueda por texto que ignora tildes, filtro por tecnología, mensaje de sin resultados y botón para restablecer."
+  },
+  {
+    "id": 9,
+    "fecha": "29/10/2026",
+    "tipo": "Hecho",
+    "titulo": "API pública de GitHub con carga, error y reintento",
+    "texto": "Sumé la consulta a la API REST de GitHub con fetch y useEffect, que no requiere clave. Implementé un mensaje de carga, un mensaje de error traducido (sin conexión o límite de consultas) y botones para actualizar y reintentar. Probé los tres estados desde las herramientas del navegador."
+  },
+  {
+    "id": 10,
+    "fecha": "29/10/2026",
+    "tipo": "Hecho",
+    "titulo": "Árbol de renderizado expandible",
+    "texto": "Armé el árbol con un archivo JSON y un componente recursivo (NodoArbol) que se dibuja a sí mismo por cada hijo, con botones para expandir y contraer. Lo contrasté con los archivos reales de components y pages para que corresponda al código entregado."
+  },
+  {
+    "id": 11,
+    "fecha": "29/10/2026",
+    "tipo": "Hecho",
+    "titulo": "README y declaración de uso de IA",
+    "texto": "Redacté el README con índice, enlace al deploy, integrante y responsabilidad, secciones de la aplicación, tecnologías y la declaración de uso de IA, que diferencia la aplicación del modelo utilizado."
   }
 ]
