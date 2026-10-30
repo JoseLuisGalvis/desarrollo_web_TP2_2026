@@ -1,22 +1,122 @@
 [
-  { "id": 1, "nombre": "[DEMO] Landing page de estudio", "tecnologia": "React", "enlace": "https://github.com/JoseLuisGalvis" },
-  { "id": 2, "nombre": "[DEMO] Portfolio personal", "tecnologia": "React", "enlace": "https://github.com/JoseLuisGalvis" },
-  { "id": 3, "nombre": "[DEMO] Panel de tareas", "tecnologia": "React", "enlace": "https://github.com/JoseLuisGalvis" },
-  { "id": 4, "nombre": "[DEMO] Buscador de recetas", "tecnologia": "React", "enlace": "https://github.com/JoseLuisGalvis" },
-  { "id": 5, "nombre": "[DEMO] Galería responsive", "tecnologia": "React", "enlace": "https://github.com/JoseLuisGalvis" },
-  { "id": 6, "nombre": "[DEMO] Calculadora", "tecnologia": "JavaScript", "enlace": "https://github.com/JoseLuisGalvis" },
-  { "id": 7, "nombre": "[DEMO] Juego de memoria", "tecnologia": "JavaScript", "enlace": "https://github.com/JoseLuisGalvis" },
-  { "id": 8, "nombre": "[DEMO] Lista de compras", "tecnologia": "JavaScript", "enlace": "https://github.com/JoseLuisGalvis" },
-  { "id": 9, "nombre": "[DEMO] Conversor de unidades", "tecnologia": "JavaScript", "enlace": "https://github.com/JoseLuisGalvis" },
-  { "id": 10, "nombre": "[DEMO] Página de presentación", "tecnologia": "HTML y CSS", "enlace": "https://github.com/JoseLuisGalvis" },
-  { "id": 11, "nombre": "[DEMO] Menú de restaurante", "tecnologia": "HTML y CSS", "enlace": "https://github.com/JoseLuisGalvis" },
-  { "id": 12, "nombre": "[DEMO] Invitación digital", "tecnologia": "HTML y CSS", "enlace": "https://github.com/JoseLuisGalvis" },
-  { "id": 13, "nombre": "[DEMO] Pruebas unitarias de calculadora", "tecnologia": "C#", "enlace": "https://github.com/JoseLuisGalvis" },
-  { "id": 14, "nombre": "[DEMO] Validador de formularios", "tecnologia": "C#", "enlace": "https://github.com/JoseLuisGalvis" },
-  { "id": 15, "nombre": "[DEMO] Gestor de inventario", "tecnologia": "C#", "enlace": "https://github.com/JoseLuisGalvis" },
-  { "id": 16, "nombre": "[DEMO] API de turnos", "tecnologia": "Node.js", "enlace": "https://github.com/JoseLuisGalvis" },
-  { "id": 17, "nombre": "[DEMO] Servidor de noticias", "tecnologia": "Node.js", "enlace": "https://github.com/JoseLuisGalvis" },
-  { "id": 18, "nombre": "[DEMO] Middleware de autenticación", "tecnologia": "Node.js", "enlace": "https://github.com/JoseLuisGalvis" },
-  { "id": 19, "nombre": "[DEMO] Servidor web en EC2", "tecnologia": "AWS", "enlace": "https://github.com/JoseLuisGalvis" },
-  { "id": 20, "nombre": "[DEMO] Red VPC con subredes", "tecnologia": "AWS", "enlace": "https://github.com/JoseLuisGalvis" }
+  {
+    "id": 1,
+    "nombre": "Trabajo Práctico N° 2 - Desarrollo Web",
+    "tecnologia": "React",
+    "enlace": "https://desarrollo-web-tp-2-2026.vercel.app/"
+  },
+  {
+    "id": 2,
+    "nombre": "Trabajo Práctico N° 1 - Desarrollo Web",
+    "tecnologia": "Html",
+    "enlace": "https://desarrollo-web-tp-1-2026.vercel.app/"
+  },
+  {
+    "id": 3,
+    "nombre": "Niveles de Pruebas de Software",
+    "tecnologia": "HTML",
+    "enlace": "https://software-test-levels.vercel.app/"
+  },
+  {
+    "id": 4,
+    "nombre": "Criterios de Pruebas de Software",
+    "tecnologia": "Html",
+    "enlace": "https://test-criteria.vercel.app/"
+  },
+  {
+    "id": 5,
+    "nombre": "Archimate",
+    "tecnologia": "Html",
+    "enlace": "https://archimate-handbook.vercel.app/"
+  },
+  {
+    "id": 6,
+    "nombre": "TOGAF",
+    "tecnologia": "Html",
+    "enlace": "https://togaf-handbook.vercel.app/"
+  },
+  {
+    "id": 7,
+    "nombre": "Claude Skills 2.0",
+    "tecnologia": "Html",
+    "enlace": "https://claude-skills-2-0.vercel.app/"
+  },
+  {
+    "id": 8,
+    "nombre": "Spec Driven Development",
+    "tecnologia": "Html",
+    "enlace": "https://specdrivendevelopment.vercel.app/"
+  },
+  {
+    "id": 9,
+    "nombre": "Capas AI",
+    "tecnologia": "Html",
+    "enlace": "https://capas-ai.vercel.app/"
+  },
+  {
+    "id": 10,
+    "nombre": "Medicare",
+    "tecnologia": "React",
+    "enlace": "https://medicare-foryou.vercel.app/"
+  },
+  {
+    "id": 11,
+    "nombre": "Comandos ANDROID",
+    "tecnologia": "Html",
+    "enlace": "https://android-xml-ui.netlify.app/"
+  },
+  {
+    "id": 12,
+    "nombre": "Deuda Técnica",
+    "tecnologia": "Html",
+    "enlace": "https://deuda-tecnica-software.netlify.app/"
+  },
+  {
+    "id": 13,
+    "nombre": "[DEMO] Pruebas unitarias de calculadora",
+    "tecnologia": "C#",
+    "enlace": "https://palaciosanjuan.netlify.app/"
+  },
+  {
+    "id": 14,
+    "nombre": "Palacio San Juan",
+    "tecnologia": "Html",
+    "enlace": "https://palaciosanjuan.netlify.app/"
+  },
+  {
+    "id": 15,
+    "nombre": "Tecnologías 3D",
+    "tecnologia": "React",
+    "enlace": "https://3dlogomodel.netlify.app/"
+  },
+  {
+    "id": 16,
+    "nombre": "Enterprise Architecture",
+    "tecnologia": "React",
+    "enlace": "https://enterprise-architecture.netlify.app/"
+  },
+  {
+    "id": 17,
+    "nombre": "Consultar San Martín",
+    "tecnologia": "Node.js",
+    "enlace": "https://horarios-sanmartin.netlify.app/"
+  },
+  {
+    "id": 18,
+    "nombre": "Vamos de Paseo",
+    "tecnologia": "Html",
+    "enlace": "https://vamosdepaseo-js.netlify.app/"
+  },
+  {
+    "id": 19,
+    "nombre": "Pizzeria",
+    "tecnologia": "React",
+    "enlace": "https://pizzeria-ecommerce.netlify.app/"
+  },
+  {
+    "id": 20,
+    "nombre": "Pole Position",
+    "tecnologia": "Html",
+    "enlace": "https://poleposition.netlify.app/"
+  }
 ]
