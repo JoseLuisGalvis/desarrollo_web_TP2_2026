@@ -14,7 +14,7 @@
   {
     "id": 3,
     "nombre": "Niveles de Pruebas de Software",
-    "tecnologia": "HTML",
+    "tecnologia": "Html",
     "enlace": "https://software-test-levels.vercel.app/"
   },
   {
@@ -73,9 +73,9 @@
   },
   {
     "id": 13,
-    "nombre": "[DEMO] Pruebas unitarias de calculadora",
-    "tecnologia": "C#",
-    "enlace": "https://palaciosanjuan.netlify.app/"
+    "nombre": "Beautiful Beach",
+    "tecnologia": "Html",
+    "enlace": "https://beautifulbeach.vercel.app/"
   },
   {
     "id": 14,
@@ -98,7 +98,7 @@
   {
     "id": 17,
     "nombre": "Consultar San Martín",
-    "tecnologia": "Node.js",
+    "tecnologia": "React",
     "enlace": "https://horarios-sanmartin.netlify.app/"
   },
   {
