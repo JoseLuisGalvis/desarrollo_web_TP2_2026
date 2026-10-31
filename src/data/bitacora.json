@@ -75,5 +75,12 @@
     "tipo": "Hecho",
     "titulo": "README y declaración de uso de IA",
     "texto": "Redacté el README con índice, enlace al deploy, integrante y responsabilidad, secciones de la aplicación, tecnologías y la declaración de uso de IA, que diferencia la aplicación del modelo utilizado."
+  },
+  {
+    "id": 12,
+    "fecha": "30/10/2026",
+    "tipo": "Hecho",
+    "titulo": "Proyectos reales y logos de tecnología",
+    "texto": "Reemplacé los registros de ejemplo por 20 proyectos reales ya desplegados, cada uno con su tecnología y su enlace. Sumé el logo de la tecnología en cada tarjeta, con una animación de zoom y resplandor al pasar el mouse."
   }
 ]
